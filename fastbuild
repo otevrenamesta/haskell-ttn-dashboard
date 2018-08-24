@@ -1,0 +1,2 @@
+# in nix-shell
+ghc -o test shared/Common.hs shared/Gateways.hs shared/Messages.hs server/Main.hs server/Ws.hs

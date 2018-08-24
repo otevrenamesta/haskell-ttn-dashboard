@@ -1,0 +1,40 @@
+body { padding-top: 5em; }
+h1, h2 { font-size: 1.8rem !important; }
+h3, h4 { font-size: 1.15rem !important; }
+
+nav span { color: #ddd; padding: 10px }
+nav i { color: PowderBlue; }
+nav.connected i { color: SpringGreen; }
+nav.disconnected i { color: Tomato; }
+nav #connectionStatus .textual { color: white; }
+#connectionStatus.connected i { color: SpringGreen; }
+#connectionStatus.disconnected i { color: Tomato; } 
+
+#settings .textual { text-decoration: underline; }
+#language .textual { text-decoration: underline; }
+
+.heroth ul { line-height: 50px; }
+.heroth ul i { font-size: 250%;   }
+.heroth ul .textual { font-size: 150%; color: #333; margin-left: 1em; }
+
+.fa-thermometer-empty { color: DodgerBlue; }
+.fa-thermometer-quarter { color: Lavender; }
+.fa-thermometer-half { color: Coral; }
+.fa-thermometer-three-quarters { color: Tomato; }
+.fa-thermometer-full { color: OrangeRed; }
+.fa-tint { color: DodgerBlue; }
+
+.signal-red { color: OrangeRed; }
+.signal-yellow { color: DarkOrange; }
+.signal-green { color: SpringGreen; }
+
+#eventTable { margin-top: 1em; }
+#eventTable i { margin: 0 10px; }
+
+table ul.data  { margin-left: 0; }
+td > div > i.fa { font-size: 150%; }
+
+.fa-toggle-on { color: DodgerBlue; }
+.fa-question-circle { color: Maroon; }
+.fa-download { color: #ff9f00; }
+.fa-upload { color: #009f00; }

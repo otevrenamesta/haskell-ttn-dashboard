@@ -1,0 +1,73 @@
+name:                ttn-dashboard
+version:             0.1.0.0
+synopsis:            TTN otevrenamesta
+category:            Web
+license:             BSD3
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable server
+  main-is:             Main.hs
+
+  if impl(ghcjs)
+    buildable: False
+  else
+    ghc-options:
+      -O2 -threaded -Wall -rtsopts
+    hs-source-dirs:
+      server, shared
+    build-depends:
+      aeson,
+      base < 5,
+      containers,
+      http-types,
+      lucid,
+      miso,
+      mtl,
+      network-uri,
+      servant,
+      servant-lucid,
+      servant-server,
+      text,
+      time,
+      wai,
+      wai-app-static,
+      wai-extra,
+      stm,
+      bytestring,
+      base64-bytestring,
+      pretty-simple,
+      websockets,
+      ttn,
+      ttn-client,
+      cayene-lpp,
+      binary,
+      shakespeare,
+      warp
+    default-language:
+      Haskell2010
+
+executable client
+  main-is:
+    Main.hs
+  if !impl(ghcjs)
+    buildable: False
+  else
+    ghcjs-options:
+      -dedupe
+    hs-source-dirs:
+      client, shared
+    build-depends:
+      aeson,
+      base < 5,
+      containers,
+      network-uri,
+      text,
+      time,
+      miso,
+      ttn,
+      cayene-lpp,
+      shakespeare,
+      servant
+    default-language:
+      Haskell2010
