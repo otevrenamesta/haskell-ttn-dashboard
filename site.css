@@ -18,7 +18,7 @@ nav #connectionStatus .textual { color: white; }
 .heroth ul .textual { font-size: 150%; color: #333; margin-left: 1em; }
 
 .fa-thermometer-empty { color: DodgerBlue; }
-.fa-thermometer-quarter { color: Lavender; }
+.fa-thermometer-quarter { color: DodgerBlue; }
 .fa-thermometer-half { color: Coral; }
 .fa-thermometer-three-quarters { color: Tomato; }
 .fa-thermometer-full { color: OrangeRed; }
