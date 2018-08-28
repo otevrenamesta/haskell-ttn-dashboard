@@ -80,6 +80,7 @@ let
     "jsaddle"
     "wai-app-static"
     "SHA"
+    "http-media"
   ];
 
   doJailbreak = [
