@@ -192,7 +192,7 @@ about m@Model{..} = template v m
         , p_ [] [
             tr lang MsgAboutHosted
           , sep
-          , a_ [ href_ "https://vpsfree.cz" ] [ text "vspFree.cz" ]
+          , a_ [ href_ "https://vpsfree.cz" ] [ text "vpsFree.cz" ]
         ]
         , h3_ [] [ tr lang MsgAboutSources ]
         , p_ [] [
