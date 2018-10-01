@@ -7,7 +7,7 @@ Time: Čas
 Port: Kanál
 Counter: Počítadlo
 Network: Síť
-Settings: Nastavění
+Settings: Nastavení
 MessageCount n: Počet správ: #{show n}
 Activation: Aktivace
 Uplink: Uplink
@@ -39,22 +39,22 @@ LangCzech: Česky
 LangSlovak: Slovensky
 LangEnglish: Anglicky
 
-EnglishResources: Anglický zdroje
-CzechResources: Český zdroje
+EnglishResources: Anglické zdroje
+CzechResources: České zdroje
 
-HomeIntro: Technologický demo otevřený LoRaWAN IoT sítě. Aplikace získává data z LoRaWAN zařízení připojenýho do
-HomeSensor: Zařízení periodicky odesílá binárně zabalený hodnoty aktualní teploty a vlhkosti z I2C senzoru SHT22.
-HomeAPI: Správy sú ziskávány z TTN MQTT API a odesílány přes Websocket servr do tyhle aplikace.
+HomeIntro: Technologické demo otevřené LoRaWAN IoT sítě. Aplikace získává data z LoRaWAN zařízení připojených do
+HomeSensor: Zařízení periodicky odesílá binárně zabalené hodnoty aktuální teploty a vlhkosti z I2C senzoru SHT22.
+HomeAPI: Správy jsou získávány z TTN MQTT API a odesílány přes Websocket server do této aplikace.
 TTN: sítě The Things Tracker network
 
 AboutPowered: Aplikaci pohání
 AboutPowered2: a skvělý
 AboutMiso: framework Miso
-AboutSensor: Firmware zařízení je taktéž napsanej v jazyku Haskell pomocí
-AboutIvoryTower: framework-u Ivory Tower
+AboutSensor: Firmware zařízení je taktéž napsaný v jazyku Haskell pomocí
+AboutIvoryTower: frameworku Ivory Tower
 AboutGateways: Brány postavil
 AboutHosted: Aplikace běží na
 AboutBy: Vyrobil
-AboutInCoOp: v spoluprácí s
+AboutInCoOp: ve spolupráci s
 AboutSources: Zdrojový kód
 AboutThisApp: (tato aplikace)
