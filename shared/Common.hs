@@ -217,7 +217,7 @@ home m@Model{..} = template v m
     pTr x = p_ [] [ tr lang x ]
 
 langs = [
-    ("cz", MsgLangCzech)
+    ("cs", MsgLangCzech)
   , ("sk", MsgLangSlovak)
   , ("en", MsgLangEnglish)
   ]
