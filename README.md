@@ -1,1 +1,1 @@
-Live at http://iot.48.io
+Live at https://iot.otevrenamesta.cz
