@@ -10,6 +10,7 @@ nav #connectionStatus .textual { color: white; }
 #connectionStatus.connected i { color: SpringGreen; }
 #connectionStatus.disconnected i { color: Tomato; } 
 
+#settings, #language { cursor: pointer; }
 #settings .textual { text-decoration: underline; }
 #language .textual { text-decoration: underline; }
 
