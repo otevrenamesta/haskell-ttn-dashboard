@@ -179,5 +179,5 @@ let
     pushd result
     ./bin/server
   '';
-in { inherit client server static combined runner; }
+in { inherit client server static combined runner ttn-client; }
 
