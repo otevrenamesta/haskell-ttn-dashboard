@@ -45,13 +45,13 @@ CzechResources: České zdroje
 HomeIntro: Technologické demo otevřené IoT sítě LoRaWAN. Aplikace získává data z koncového LoRaWAN zařízení připojeného do
 HomeSensor: Zařízení periodicky odesílá binárně zabalené hodnoty aktualní teploty a vlhkosti z I2C senzoru SHT22.
 HomeAPI: Zprávy jsou získávány z TTN MQTT API a odesílány přes WebSocket server do této aplikace.
-TTN: sítě The Things Tracker network
+TTN: sítě The Things Network
 
 AboutPowered: Aplikaci pohání
 AboutPowered2: a skvělý
 AboutMiso: framework Miso
 AboutSensor: Firmware zařízení je taktéž napsán v jazyku Haskell pomocí
-AboutIvoryTower: framework-u Ivory Tower
+AboutIvoryTower: frameworku Ivory Tower
 AboutGateways: Brány postavil
 AboutHosted: Aplikace běží na
 AboutBy: Vyrobil

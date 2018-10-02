@@ -45,7 +45,7 @@ CzechResources: Czech resources
 HomeIntro: This application represents a technological demo of open LoRaWAN IoT network, feeding live data from LoRaWAN sensor connected to
 HomeSensor: Device periodically sends binary packed temperature and humidity values from SHT22 I2C sensor.
 HomeAPI: Messages are marshalled from TTN MQTT API to Websocket server for this client application.
-TTN: The Things Tracker network
+TTN: The Things Network
 
 AboutPowered: Application is powered by
 AboutPowered2: and excellent
