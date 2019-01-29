@@ -408,10 +408,12 @@ renderGateway lang TTN.GatewaysElt{..} = faLi "broadcast-tower" $ div_ [] [
     maybeGwName Nothing = tr lang MsgUnknownGw
     maybeGwName (Just x) = case M.lookup (T.unpack x) gatewayMapping of
       Nothing -> fromText x
-      Just gwmsg -> a_ [ href_ ("https://ttnmapper.org/?gateway=" <> (pack $ T.unpack $ cvtEUI x) <> "&type=radar") ] [ tr lang gwmsg ]
+      Just (gwmsg, lat, lon) -> a_ [ href_ (mapperURL lat lon) ] [ tr lang gwmsg ]
 
 -- eui-b827ebfffec6e5d0 -> B827EBFFFEC6E5D0
 cvtEUI = T.toUpper . (T.drop 4)
+
+mapperURL lat lon = "https://ttnmapper.org/?lat=" <> (pack $ show lat) <> "&lon=" <> (pack $ show lon) <> "&zoom=15&type=radar&layer=mapnik"
 
 renderUplinkGateway lang Nothing = blank
 renderUplinkGateway lang maybeEUI = ul_ [ class_ "fa-ul" ] [
@@ -423,7 +425,7 @@ renderUplinkGateway lang maybeEUI = ul_ [ class_ "fa-ul" ] [
     maybeGwName Nothing = tr lang MsgUnknownGw
     maybeGwName (Just x) = case M.lookup (T.unpack x) gatewayMapping of
       Nothing -> fromText x
-      Just gwmsg -> a_ [ href_ ("https://ttnmapper.org/?gateway=" <> (pack $ T.unpack $ cvtEUI x) <> "&type=radar") ] [ tr lang gwmsg ]
+      Just (gwmsg, lat, lon) -> a_ [ href_ (mapperURL lat lon) ] [ tr lang gwmsg ]
 
 faLi cls txt = li_ [] [
     span_ [ class_ "fa-li" ] [
