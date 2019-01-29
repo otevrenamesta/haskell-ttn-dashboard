@@ -43,7 +43,7 @@ EnglishResources: Anglické zdroje
 CzechResources: České zdroje
 
 HomeIntro: Technologické demo otevřené IoT sítě LoRaWAN. Aplikace získává data z koncového LoRaWAN zařízení připojeného do
-HomeSensor: Zařízení periodicky odesílá binárně zabalené hodnoty aktualní teploty a vlhkosti z I2C senzoru SHT22.
+HomeSensor: Zařízení periodicky odesílá naměřené hodnoty aktualní teploty a vlhkosti ze senzoru SHT22.
 HomeAPI: Zprávy jsou získávány z TTN MQTT API a odesílány přes WebSocket server do této aplikace.
 TTN: sítě The Things Network
 
