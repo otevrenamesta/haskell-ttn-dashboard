@@ -168,6 +168,10 @@ about m@Model{..} = template v m
           , ul_ [] [
               li_ [] [ a_ [ href_ "http://otevrenamesta.cz/" ] [ text "Otevřená města" ] ]
             , li_ [] [ a_ [ href_ "https://www.nmnm.cz/" ] [ text "Nové Město na Moravě" ] ]
+          , p_ [] [
+              a_ [ href_ "http://otevrenamesta.cz/" ] [ img_ [ src_ "static/img/om.svg", width_ "300", alt_ "Otevřená města" ] ]
+            , a_ [ href_ "https://www.nmnm.cz/" ] [ img_ [ src_ "static/img/nmnm.png", width_ "100", alt_ "Nové Město na Moravě" ] ]
+            ]
           ]
         ]
         , p_ [] [
@@ -187,18 +191,37 @@ about m@Model{..} = template v m
         , p_ [] [
             tr lang MsgAboutGateways
           , sep
-          , a_ [ href_ "https://base48.cz" ] [ text "base48.cz hackerspace" ]
+          , a_ [ href_ "https://wiki.base48.cz/TTN" ] [ text "base48.cz hackerspace wiki" ]
         ]
         , p_ [] [
             tr lang MsgAboutHosted
           , sep
-          , a_ [ href_ "https://vpsfree.cz" ] [ text "vpsFree.cz" ]
+          , a_ [ href_ "https://vpsfree.cz" ] [ span_ [ style_ $ M.fromList [(pack "color", pack "#f6914b")] ] [ text "vps" ]
+                                              , span_ [ style_ $ M.fromList [(pack "color", pack "#000")] ] [ text "Free.cz" ]
+                                              ]
+        ]
+        , p_ [] [
+            a_ [ href_ "https://base48.cz/" ] [
+              img_ [
+                  src_ "static/img/base.svg"
+                , style_ $ M.fromList [(pack "padding-left", pack "4em")]
+                , width_ "200"
+                , alt_ "base48"
+                ]
+              ]
+          , a_ [ href_ "https://vpsfree.cz/" ] [
+              img_ [
+                  src_ "static/img/vpsf.png"
+                , style_ $ M.fromList [(pack "margin-left", pack "5em")]
+                , width_ "200"
+                , alt_ "vpsFree.cz" ]
+              ]
         ]
         , h3_ [] [ tr lang MsgAboutSources ]
         , p_ [] [
           ul_ [] [
-              li_ [] [ a_ [ href_ "https://github.com/sorki/haskell-ttn-dashboard" ] [ text "haskell-ttn-dashboard" ], sep, tr lang MsgAboutThisApp ]
-            , li_ [] [ a_ [ href_ "https://github.com/sorki/data-ttn" ] [ text "data-ttn" ] ]
+              li_ [] [ a_ [ href_ "https://github.com/otevrenamesta/haskell-ttn-dashboard" ] [ text "haskell-ttn-dashboard" ], sep, tr lang MsgAboutThisApp ]
+            , li_ [] [ a_ [ href_ "https://github.com/sorki/data-ttn"   ] [ text "data-ttn" ] ]
             , li_ [] [ a_ [ href_ "https://github.com/sorki/cayene-lpp" ] [ text "cayene-lpp" ] ]
             , li_ [] [ a_ [ href_ "https://github.com/sorki/ttn-client" ] [ text "ttn-client" ] ]
           ]

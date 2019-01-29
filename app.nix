@@ -160,6 +160,8 @@ let
     cp ${animate} $out/animate.css
 
     cp ${./site.css} $out/site.css
+
+    cp -a ${./img} $out/img/
   '';
 
   combined = runCommand "dashboard-combined" { } ''
